@@ -1,16 +1,16 @@
 {
-    "name": "angular-quickstart",//项目名称
-    "version": "1.0.0",//版本
+    "name": "angular-quickstart",
+    "version": "1.0.0",
     "scripts": {
-        "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",//用于启动测试服务器，启动的过程中执行了编译、检测文件修改、启动服务器等任务。
+        "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
         "lite": "lite-server",
-        "postinstall": "typings install",//用于在npm install完成以后执行，下载TypeScript类型定义文件。
+        "postinstall": "typings install",
         "tsc": "tsc",
-        "tsc:w": "tsc -w",//编译TypeScript文件，并且是以’watch’模式启动，也就是检测文件修改，如果有TypeScript文件被修改，自动执行编译过程。
+        "tsc:w": "tsc -w",
         "typings": "typings"
     },
-    "license": "ISC",//开源许可
-    "dependencies": {//可选字段，指示当前包所依赖的其他包。
+    "license": "ISC",
+    "dependencies": {
         "@angular/common": "~2.0.2",
         "@angular/compiler": "~2.0.2",
         "@angular/core": "~2.0.2",
@@ -28,7 +28,7 @@
         "systemjs": "0.19.39",
         "zone.js": "^0.6.25"
     },
-    "devDependencies": {//如果有人计划在他们的项目中下载和使用你的模块，但他们可能并不想或并不需要你开发所使用的外部测试和文档框架。在这种情况下，最好将这些附加的项放在devDependencies中。
+    "devDependencies": {
         "concurrently": "^3.1.0",
         "lite-server": "^2.2.2",
         "typescript": "^2.0.3",
