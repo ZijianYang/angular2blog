@@ -1,5 +1,5 @@
 #安装依赖
 npm install
 
-
-
+#启动
+Ctrl+Shift+B
